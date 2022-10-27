@@ -1,0 +1,17 @@
+.subrayado {
+   color:brown;
+   text-decoration:underline;
+   font-size: x-large;
+  }
+  body {
+    background-color: blueviolet
+  }
+
+  .alineacion{
+  text-align: justify;
+  }
+
+  .imagen{
+    width: auto;
+    height: auto;
+  }
