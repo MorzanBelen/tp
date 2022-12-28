@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <title>Proyecto final</title>
+
+</head>
+
+<body class="container">
+
+
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="imagenes/receta.png" width="40" alt="" srcset="">
+        <span class="fs-4">RecetasLT</span>
+    </a>
+
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+        
+     
+    </ul>
+    <br>
+    <button onclick="sitioOscuro()">Sitio Oscuro</button>
+    <br>
+    <button onclick="sitioClaro()">Sitio Claro</button>
+</header>
+
+
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Tu nombre:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Tu correo electrónico:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Mensaje:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Enviar" />
+</form>
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="imagenes/receta.png" width="40" alt="" srcset="">
+
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; Sitio creado por María Belén Morzan - 2022</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.png" class="bi" width="24"
+                    height="24">
+                <use xlink:href="#instagram" />
+            </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twiter.png" class="bi" width="24"
+                    height="24">
+                <use xlink:href="#instagram" />
+            </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" target="_blank"><img src="imagenes/face.png" class="bi" width="24"
+                    height="24">
+                <use xlink:href="#instagram" />
+            </a></li>
+    </ul>
+</footer>        
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
+<script src="./js/javascript.js"></script>

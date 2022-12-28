@@ -1,44 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Pagina web</title>
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <title>Proyecto final</title>
+
 </head>
-<body>
-    <h1 class= "subrayado">Receta de torta frita</h1>
-    <div class="imagen">
-        <img src="tortas fritas.jpg" alt="Tortas Fritas">
-    </div>
-    <p class="alineacion">Las clásicas tortas fritas son una tradición argentina a lo largo de varias generaciones, que la comparten con el mate y se suelen preparar en los días de lluvia.</p>
-            
-        <h2 class=" subrayado"> Ingredientes </h2>
-        <ul class="alineacion">
-           <li> 500 g de harina 000 </li>
-           <li> 2 cucharadas de azúcar</li> 
-           <li>1 cucharada de sal </li>
-           <li>15 g de levadura en polvo </li>
-           <li>2 huevos </li>
-           <li>150 cc de agua </li>
-           <li>75 g de grasa vacuna blanda (o margarina)</li>
-           <li>Abundante aceite o grasa para freír </li>
+
+<body class="container" onload=" cartel()">
+   
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="imagenes/receta.png" width="40" alt="" srcset="">
+            <span class="fs-4">RecetasLT</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="contacto.html"target="_blank" class="nav-link">Contacto</a></li>
+         
         </ul>
-       
-        <h3 class="subrayado">Preparación</h3>
-        <ol class="alineacion">
-            <li>Formar un volcán con la harina, el azúcar,  la sal y la levadura. </li>
-            <li>Sumar en el centro los huevos, el agua a temperatura ambiente y  la grasa o margarina blanda y los huevos. Unir los ingredientes centrales, incorporando de a poco la harina de los costados. Amasar hasta lograr un bollo liso.</li>
-            <li>Cubrir con polietileno y dejarla descansar 30 minutos en la heladera. Retirar, estirar la masa hasta que quede de 2 milímetros de grosor.</li>
-            <li>Cortar en cuadrados o medallones. Pinchar con un tenedor o hacer un agujero con el dedo en el centro de cada uno.</li>
-            <li>Freír las tortas en una cacerola con aceite o grasa no muy caliente, dándolas vuelta en la mitad de la cocción para que se doren parejo. Escurrirlas sobre papel absorbente. Espolvorear con azúcar. </li>         
-         </ol>
-         <iframe width="683" height="384" src="https://www.youtube.com/embed/xd1fwnUZEkM" title="Torta frita tradicional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <button onclick="sitioOscuro()">Sitio Oscuro</button>
+        <br>
+        <button onclick="sitioClaro()">Sitio Claro</button>
+    </header>
 
-         <p> Ésta receta es del norte del país, más precisamente de Corrientes</p>
-         <img src="mapa.png" alt="Mapa de Corrientes">
-
-        </body>        
+    <div class="px-4 py-5 my-5 text-center">
        
+
+        <img class="d-block mx-auto mb-4" src="imagenes/receta.png" alt="" width="72">
+        <h1 class="display-5 fw-bold">Recetas fáciles </h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">En ésta página encontrarás recetas super sencillas, ideales para realizar en familia.</p>
+            
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    
+                    <h3 class="mb-0">Chipacitos correntinos</h3>
+               
+                    <p class="mb-auto">El chipá es un pan de queso originario de la zona del literal argentino. Este pan está elaborado con harina de mandioca, queso, leche y huevo.</p>
+                    <a href="https://www.recetasgratis.net/receta-de-chipacitos-correntinos-75909.html" target="_blank"class="stretched-link">Leer más</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="placeholder" src="./imagenes/chipacitoss.jpg" width="200" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                   
+                    <h3 class="mb-0">Chipá mbocá</h3>
+                    
+                    <p class="mb-auto">El chipá mbocá, consiste en una masa de almidón de mandioca, huevos, materia grasa y queso, la cual se amasa para luego colocarse alrededor de una caña de las llamadas tacuara, caña o palo.</p>
+                    <a href="https://www.recetas-argentinas.com/recetas/entradas/chipa-mboca" target="_blank" class="stretched-link">Leer más</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="placeholder" src="./imagenes/chipa mboca.jpg" width="200" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    
+                    <h3 class="mb-0">Torta asada</h3>
+          
+                    <p class="mb-auto">La torta asada, es también una opción sencilla para elaborar.</p>
+                    <a href="https://hacerasado.com.ar/tortas-asadas-a-la-parrilla/" target="_blank"class="stretched-link">Leer más</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="placeholder" src="./imagenes/torta asada.jpg" width="200" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  
+                    <h3 class="mb-0">Torta frita</h3>
+                    <p class="mb-auto">Las clásicas tortas fritas son una tradición argentina a lo largo de varias generaciones, que la comparten con el mate y se suelen preparar en los días de lluvia.</p>
+                    <a href="tortafrita.html" target="_blank" class="stretched-link">Leer más</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="placeholder" src="imagenes/tortas fritas.jpg" width="200" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="imagenes/receta.png" width="40" alt="" srcset="">
+
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; Sitio creado por María Belén Morzan - 2022</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram.png" class="bi" width="24"
+                        height="24">
+                    <use xlink:href="#instagram" />
+                </a></li>
+            <li class="ms-3"><a class="text-muted" href="https://twitter.com/?lang=es" target="_blank" ><img src="imagenes/twiter.png" class="bi" width="24"
+                        height="24">
+                    <use xlink:href="#instagram" />
+                </a></li>
+            <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/" target="_blank"><img src="imagenes/face.png" class="bi" width="24"
+                        height="24">
+                    <use xlink:href="#instagram" />
+                </a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script> 
+ 
+</body>

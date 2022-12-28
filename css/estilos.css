@@ -4,7 +4,8 @@
    font-size: x-large;
   }
   body {
-    background-color: blueviolet
+    background-color: rgb(221, 201, 240)
+    text-align:justify ;
   }
 
   .alineacion{
@@ -15,3 +16,71 @@
     width: auto;
     height: auto;
   }
+  
+  
+  .receta {
+    width: 30%;
+    height: 70px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+      }
+  .receta p a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    
+
+  }
+ 
+  h3 ol li{font-size: 2rem;}
+  h4 ol li {font-size: 2rem;}
+
+  nav{
+    width: 70%;
+    height: 70px;
+    /*background: olive;*/
+    float: left;
+    display: inline;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+  }
+
+  nav ul li{
+    display: inline;
+  }
+
+  nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+   
+  
+  }
+
+nav ul li a:hover{
+  color: #444;
+}
+
+.pie{background-color: #1Abc9c;
+ }
+
+ .pie h5{
+  color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold
+ }
+
+ 
+
+ .placeholder{
+  box-sizing: border-box;
+ }
